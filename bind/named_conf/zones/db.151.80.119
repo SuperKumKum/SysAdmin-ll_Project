@@ -1,0 +1,16 @@
+;
+; BIND reserve data file for 119.80.151.in-addr.arpa 
+;
+
+$TTL    3h
+@       IN      SOA     ns1.wt7.ephec-ti.be. root.wt7.ephec-ti.be. (
+                        1       ; Serial
+                        3h      ; Refresh
+                        1h      ; Retry
+                        1w      ; Expire
+                        1h )    ; Negative caching TTL
+;
+119.80.151.in-addr.arpa.	IN	NS	ns1.wt7.ephec-ti.be.
+
+151.119.80.151.in-addr.arpa	IN	PTR	wt7.ephec-ti.be. 
+

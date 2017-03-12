@@ -1,0 +1,17 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "wt7.ephec-ti.be" {
+	type master;
+	file "/etc/bind/zones/db.wt7.ephec-ti.be";
+};
+
+zone "119.80.151.in-addr3.arpa" {
+	type master;
+	file "/etc/bind/zones/db.151.80.119";
+};
