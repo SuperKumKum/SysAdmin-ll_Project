@@ -8,8 +8,12 @@
 ## Persistence 
 We need to mount the volume for the access of the configuration files, for that we nned to create the folder `/data`.
 By using those commands : 
+
 `mkdir -p /srv/docker/bind`
 `chcon -Rt svirt_sandbox_file_t /srv/docker/bind`
 
 ## Shell Access aka "Comment on fait pour modifier les conf.file?" : 
 `docker exec -it <namedOfImage> bash`
+
+## delete  the exited conainers 
+`sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm`
