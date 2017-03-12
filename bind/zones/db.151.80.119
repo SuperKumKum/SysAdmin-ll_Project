@@ -1,0 +1,15 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.wt7.ephec-ti.be.	admin.wt7.ephec-ti.be (
+			20170317 ; Serial
+			 604800	 ; Refresh
+			  86400	 ; Retry
+			2419200	 ; Expire
+			 604800 ); Negative Cache TTL
+; name server 
+119.80.151.in-addr.arpa.	IN	NS	ns.wt7.ephec-ti.be.
+
+; PTR Recors 
+119.80.151.in-addr.arpa.	IN	PTR	wt7.ephec-ti.be.
