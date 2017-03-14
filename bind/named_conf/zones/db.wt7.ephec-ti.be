@@ -3,7 +3,7 @@
 ;
 
 $TTL 3600
-@			IN	SOA	ns.wt7.ephec-ti.be. admin.wt7.ephec-ti.be. (
+wt7.ephec-ti.be.			IN	SOA	ns.wt7.ephec-ti.be. admin.wt7.ephec-ti.be. (
 					1	; serial
 					3600	; refresh after 1h
 					600	; retry after 10m
@@ -11,10 +11,10 @@ $TTL 3600
 					600	; Negative TTL of 10m
 ); 
 
-@			IN	NS	ns.wt7.ephec-ti.be. 
-@			IN	MX	10	mail.wt7.ephec-ti.be.
+wt7.ephec-ti.be.	IN	NS	ns.wt7.ephec-ti.be. 
+wt7.ephec-ti.be.	IN	MX	10	mail.wt7.ephec-ti.be.
 wt7.ephec-ti.be.	IN	A	151.80.119.151
-ns			IN	A	151.80.119.151
+ns.ephec-ti.be		IN	A	151.80.119.151
 mail			IN	A	151.80.119.151
 www			IN	CNAME	wt7.ephec-ti.be.
 b2b			IN	CNAME	wt7.ephec-ti.be.
