@@ -1,4 +1,4 @@
-# Objectifs de la mission 1. 
+# OBJECTIFS MISSION 1   
 ## Github
 - [x] Le groupe a un Github. 
 - [x] Les configs sont sur le Github. 
