@@ -1,0 +1,40 @@
+body {
+    background-color: lightgreen;
+    width: 98%;
+}
+header {
+    display: flex;
+    background-color: navy;
+    color: snow;
+    margin: -30px -24px 0 -25px;
+    padding: 27px;
+    opacity: 0.7;
+}
+a {
+    color: snow;
+    text-decoration: blink;
+}
+a:hover {
+    color: red;
+    text-decoration: overline;
+}
+h1 {
+    font-family: "Comic Sans MS";
+    font-size: 1.7em;
+}
+h2 {
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    padding: 1em;
+}
+img {
+    text-align: center;
+}
+@media all and (max-width: 1024px) {
+    article {
+        width: auto;
+        flex-direction: column;
+    }
+}
