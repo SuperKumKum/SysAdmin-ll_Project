@@ -15,7 +15,7 @@ Le client souhaite remplacer son infrastructure vieillissante en la délocalisan
 Un cahier des charges à été conçus par WT et le consultant. Ce dernier nous transmettra le rapport de manière itérative.
 
 ## Etapes
-- [ ] Mission 1: **Web & DNS** (14 mars 2017)
+- [x] Mission 1: **Web & DNS** (14 mars 2017)
 - [ ] Mission 2: **Mail** (18 avril 2017)
 - [ ] Mission 3: **Voip** (2 mai 2017)
 - [ ] Mission 4: **To be defined** (16 mai 2017)
