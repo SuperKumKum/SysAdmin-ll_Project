@@ -49,6 +49,6 @@
 - [x] Le site intranet.wtX.ephec-ti.be fournit une page HTML
 - [x] Le site intranet.wtX.ephec-ti.be n’est accessible que par les employés (ex : seule une adresse IP spécifique y a accès)
 - [ ] Un proxy est mis en place pour la navigation web des employés
-- [ ] Un reverse proxy est mis en place pour protéger les serveurs
+- [x] Un reverse proxy est mis en place pour protéger les serveurs
 - [x] D’autres fonctionnalités web intéressantes sont mises en place, en cohérence avec le CdC
 
