@@ -20,8 +20,8 @@
     * Christophe (OK)
 - [x] Vps refusent l'accès SSH(root)
 - [x] Fail2Ban installé. 
-- [ ] Seuls les ports demandés sont ouverts. 
-- [ ] Firewall (installé mais non configuré). 
+- [x] Seuls les ports demandés sont ouverts. 
+- [x] Firewall (installé mais non configuré). 
 - [ ] Architecture DMZ (?)
 ## Délivrables 
 - [x] Rapport fourni 
