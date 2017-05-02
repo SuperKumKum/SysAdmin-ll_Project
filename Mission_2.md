@@ -15,3 +15,12 @@
 - [ ] Le serveur SMTP n’accepte de relayer que les mails de l’entreprise (authentification?)
 - [ ] Des filtres anti-spam sont déployés
 - [ ] Des proxies sont utilisés
+## Délivrables
+- [ ] Rapport fourni
+- [ ] Forme rapport correcte
+- [ ] Cahier des charges complet et bien rédigé
+- [ ] Traduction CdC en language informatique
+- [ ] La solution choisie est présentée et argumentée pour chaque service
+- [ ] Un état des lieux de ce qui fonctionne ou non est donné + justifications / pistes pour la correction de ce qui ne marche pas
+- [ ] Un schéma réseau est disponible
+- [ ] Le schéma réseau est pertinent et correct
