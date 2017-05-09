@@ -21,6 +21,15 @@
     container_name: mysql 
     environment:
      - MYSQL_ROOT_PASSWORD=hunter2
+     
+## Gérer l'image/bases de données 
+- Exécuter la commande pour rentrer dans le containeur: 
+    
+    docker exec -it mysql bash
+
+- Importer ses bases de données via le Volume: 
+    
+    # PAS MIS EN PLACE
 
 ## Commandes de bases dans la console mysql
     mysql -u root -p # Connexion à la console sql
