@@ -1,26 +1,32 @@
 ;
-; BIND data file for wt7.ephec-ti.be
+; Modified 09-05-2017
+; BIND File 
 ;
 
-$TTL 3600
-wt7.ephec-ti.be.			IN	SOA	ns.wt7.ephec-ti.be. admin.wt7.ephec-ti.be. (
-					1	; serial
-					3600	; refresh after 1h
-					600	; retry after 10m
-					86400	; expire after 1d 
-					600	; Negative TTL of 10m
-); 
+$TTL 1d 
+$ORIGIN wt7.ephec-ti.be.
+@	1D	IN	SOA	ns1.wt7.ephec-ti.be. admin.wt7.ephec-ti.be (
+				1	; serial
+				3H	; refresh
+				15	; retry 
+				1w	; exprire
+				3h)	;
 
-wt7.ephec-ti.be.	IN	NS	ns.wt7.ephec-ti.be. 
-wt7.ephec-ti.be.	IN	MX	10	mail.wt7.ephec-ti.be.
-wt7.ephec-ti.be.	IN	A	151.80.119.151
-ns.ephec-ti.be		IN	A	151.80.119.151
-mail			IN	A	151.80.119.151
-www			IN	CNAME	wt7.ephec-ti.be.
-b2b			IN	CNAME	wt7.ephec-ti.be.
-intranet		IN	CNAME	wt7.ephec-ti.be.
+; NS RECORDS
+	IN	NS	ns1.wt7.ephec-ti.be.
+	IN	NS	ns2.wt7.ephec-ti.be.
+	IN	NS	ns3.wt7.ephec-ti.be. 
+;;	IN	MX	10	mail.wt7.ephec-ti.be.
 
-; for ipv6
-wt7.ephec-yi.be		IN	AAAA	2001:41d0:401:3100:0000:0000:0000:658f
-ns			IN	AAAA	2001:41d0:401:3100:0000:0000:0000:658f
-mail			IN	AAAA	2001:41d0:401:3100:0000:0000:0000:658f
+; A RECORDS 
+ns1	IN	A	151.80.119.151
+ns2	IN	A	151.80.119.138
+ns3	IN	A	151.80.119.127
+
+; server web
+web		IN	A	151.80.119.151
+www		IN	CNAME	web	
+b2b		IN	CNAME	web
+intranet	IN	CNAME	web
+
+;; server mail
