@@ -29,7 +29,7 @@
 
 - Importer ses bases de données via le Volume: 
     
-    # PAS MIS EN PLACE
+    #PAS MIS EN PLACE
 
 ## Commandes de bases dans la console mysql
     mysql -u root -p # Connexion à la console sql
