@@ -1,31 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Chris
- * Date: 20/03/2017
- * Time: 18:17
- */
+ <?php
+    $username = "wt7";
+    $password = "myPassword";
+    $hostname = "db"; 
 
-//try{
-   // $sql = 'SELECT * FROM db_Table';
-   // $dbh = new PDO('mysql:host=localhost; dbname=db_wt7', 'root','passroot' );
-   // $sth = $dbh->prepare($sql);
-   // $infos = $sth->execute();
-   // $infos = $sth->fetchAll(PDO::FETCH_ASSOC);
-   // $dbh = null;
-   // $aff='';
-   // foreach($infos as $key=>$value){
-    //    $aff='<tr>';
-      //  $aff='<td>'.$infos[$key]["id"].'</td>';
-       // $aff='<td>'.$infos[$key]["produits"].'</td>';
-       // $aff='<td>'.$infos[$key]["qte"].'</td>';
-       // $aff='</tr>';
-
-    //}
-//}
-//catch (PDOException $Exception){
-  //  $aff=='<tr><td>'.$Exception->getMessage( ).'</td></tr>';
-//}
-
-//echo $aff;
-phpinfo();
+    //connection to the database
+    $dbhandle = mysql_connect($hostname, $username, $password) 
+    or die("Unable to connect to MySQL");
+    echo "Connected to MySQL<br>";
+    ?>
