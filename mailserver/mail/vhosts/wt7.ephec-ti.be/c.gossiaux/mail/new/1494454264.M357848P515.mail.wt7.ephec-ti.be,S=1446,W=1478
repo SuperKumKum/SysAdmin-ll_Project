@@ -1,0 +1,32 @@
+Return-Path: <admin@wt7.ephec-ti.be>
+Delivered-To: <c.gossiaux@wt7.ephec-ti.be>
+Received: from mail.wt7.ephec-ti.be
+	by mail.wt7.ephec-ti.be (Dovecot) with LMTP id 3ES2FPiPE1kDAgAAJEX/iA
+	for <c.gossiaux@wt7.ephec-ti.be>; Wed, 10 May 2017 22:11:04 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.wt7.ephec-ti.be (Postfix) with ESMTP id 49C7158075B
+	for <c.gossiaux@wt7.ephec-ti.be>; Wed, 10 May 2017 22:11:04 +0000 (UTC)
+X-Quarantine-ID: <ApJi10z5_zoa>
+X-Virus-Scanned: Debian amavisd-new at mail.wt7.ephec-ti.be
+X-Amavis-Alert: BAD HEADER SECTION, Missing required header field: "Date"
+Received: from mail.wt7.ephec-ti.be ([127.0.0.1])
+	by localhost (mail.wt7.ephec-ti.be [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id ApJi10z5_zoa for <c.gossiaux@wt7.ephec-ti.be>;
+	Wed, 10 May 2017 22:11:04 +0000 (UTC)
+Received: from mail.wt7.ephec-ti.be (unknown [172.18.0.5])
+	by mail.wt7.ephec-ti.be (Postfix) with ESMTP id DC48D580756
+	for <c.gossiaux@wt7.ephec-ti.be>; Wed, 10 May 2017 22:11:03 +0000 (UTC)
+Authentication-Results: mail.wt7.ephec-ti.be; dmarc=none header.from=wt7.ephec-ti.be
+Authentication-Results: mail.wt7.ephec-ti.be; dkim=none
+	reason="no signature"; dkim-adsp=none (unprotected policy);
+	dkim-atps=neutral
+To: c.gossiaux@wt7.ephec-ti.be
+From: admin@wt7.ephec-ti.be
+Subject: Bienvenue
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Hi,
+
+Welcome to your new account.

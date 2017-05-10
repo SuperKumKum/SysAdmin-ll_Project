@@ -1,0 +1,93 @@
+Return-Path: <nathan1voss@gmail.com>
+Delivered-To: <contact@wt7.ephec-ti.be>
+Received: from mail.wt7.ephec-ti.be
+	by mail.wt7.ephec-ti.be (Dovecot) with LMTP id ZeIKMEGME1mmAQAAJEX/iA
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 21:55:13 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.wt7.ephec-ti.be (Postfix) with ESMTP id BBF4558073C
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 21:55:13 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at mail.wt7.ephec-ti.be
+X-Spam-Flag: NO
+X-Spam-Score: 1.156
+X-Spam-Level: *
+X-Spam-Status: No, score=1.156 tagged_above=1 required=5
+	tests=[DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1,
+	FREEMAIL_FROM=0.001, HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001,
+	RCVD_IN_MSPIKE_H3=-0.01, RCVD_IN_MSPIKE_WL=-0.01, RDNS_NONE=1.274,
+	SPF_PASS=-0.001, URIBL_BLOCKED=0.001] autolearn=no autolearn_force=no
+Received: from mail.wt7.ephec-ti.be ([127.0.0.1])
+	by localhost (mail.wt7.ephec-ti.be [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id v9WeU_Sk9gMP for <contact@wt7.ephec-ti.be>;
+	Wed, 10 May 2017 21:55:12 +0000 (UTC)
+Received: from mail-ua0-f174.google.com (unknown [209.85.217.174])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.wt7.ephec-ti.be (Postfix) with ESMTPS id 6CB2E580737
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 21:55:12 +0000 (UTC)
+Authentication-Results: mail.wt7.ephec-ti.be; dmarc=pass header.from=gmail.com
+Authentication-Results: mail.wt7.ephec-ti.be; dkim=pass
+	reason="2048-bit key; unprotected key"
+	header.d=gmail.com header.i=@gmail.com header.b=T9cYWghE;
+	dkim-adsp=pass; dkim-atps=neutral
+Received: by mail-ua0-f174.google.com with SMTP id g49so10757060uaa.1
+        for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 14:55:12 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=U6GizAVgUuTHwOqfOrlVidDt7fC6N6d4asvgSilOIgc=;
+        b=T9cYWghEnGU16PzAoSe1tAwqgxzl11FSq0w8xsHe1SVWAj9Rle516BAZzff/VuyytR
+         K2PJos51/oTJtJaQIonPGibLaw4fKqYF7M3LQK48tr2UvOun96OaV5Z5X/B/7KrXfh+r
+         PwCGn5ekM1kRb0t9GlgiK0QP1LKzogQbeMIJnh7SEqrLLPR/vb1btM6gf+VFA+su/W6E
+         C5IA9yLEzZmkE4VyQbLUB8S0SkAEeu38KRXNvZgrq9hi01IWJliHiLBSo4DFn91lig/S
+         0eT57wEcgiW/qA+pcDv4j+QFGe1AHuTHEVb99wC+KDyQUT2e+sAD1kXJT8DYZoy0zMEt
+         2OfA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=U6GizAVgUuTHwOqfOrlVidDt7fC6N6d4asvgSilOIgc=;
+        b=X5qNLdGXPPS9uCE71hxngfaxUKidkZJ9FnHQd2r+hPJe53z1JTRpcmZ6B5+B9qKGgn
+         a/uftNiBdwSIKkNtv/gi9leOG6bKmJPF3II08K4pFlQYfuCIF0BIeOhDytVKzyefKA14
+         UUb4Fd2MEn8qgHcQWuPvXPi1JwcfRlmdT0wmEToMd6Zro1ngyAQV5lk/Xn+mnMuqkI4K
+         UyZdVfdAzJcGfz+YyD2579ysWMyFjruPXRcg6XChnRdHYI1D5FNhYzuY6Lp6xkiwQGlc
+         100pZfQXwiKbH/TKP0107dHD7fiIZjt9oAvdXi/DLy1yhe13SJjesHtZPPoNrYNtqKPm
+         uDLA==
+X-Gm-Message-State: AODbwcDbH9zpJjT2yAHBvPGkDnRzwv8Qt0NIt8S+T5lKVAQfx3zHo9yY
+	fluu1bRM3Zi2icaDHwhlJ9W65/2qPQ==
+X-Received: by 10.176.74.66 with SMTP id r2mr4211466uae.39.1494453310375; Wed,
+ 10 May 2017 14:55:10 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.31.188.212 with HTTP; Wed, 10 May 2017 14:55:09 -0700 (PDT)
+Received: by 10.31.188.212 with HTTP; Wed, 10 May 2017 14:55:09 -0700 (PDT)
+In-Reply-To: <a612e38a-5925-e401-e468-c9dc16b2ea07@wt7.ephec-ti.be>
+References: <a612e38a-5925-e401-e468-c9dc16b2ea07@wt7.ephec-ti.be>
+From: nathan voss <nathan1voss@gmail.com>
+Date: Wed, 10 May 2017 23:55:09 +0200
+Message-ID: <CAAp8d9M0N0bfu5FNKWT1=YOk3n=HP=Qwz8+5YR_DmEdP50aUVA@mail.gmail.com>
+Subject: =?UTF-8?Q?Re=3A_On_a_niqu=C3=A9_le_game_oui_c=27est_possible?=
+To: contact <contact@wt7.ephec-ti.be>
+Content-Type: multipart/alternative; boundary=f403045f88f6b2cc1a054f3286ec
+
+--f403045f88f6b2cc1a054f3286ec
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+SGFoYSB5ZXMgbW9uIGdhcnMgdCdhcyBuaXF1ZXIgbGUgR2FtZQ0K4pi677iP4pi677iP8J+NvvCf
+pYLwn5iY8J+YmPCfmJnwn4238J+NufCfmIfwn5iI8J+Pmu+4j+Kbqe+4j/CflYvwn4+n8J+Pp+Kb
+qe+4j/Cfj6Lwn4+b77iP4puq8J+Skg0KDQpMZSAxMCBtYWkgMjAxNyAyMzo1MywgImNvbnRhY3Qi
+IDxjb250YWN0QHd0Ny5lcGhlYy10aS5iZT4gYSDDqWNyaXQgOg0KDQo+IDotKQ0KPg0K
+--f403045f88f6b2cc1a054f3286ec
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9ImF1dG8iPkhhaGEgeWVzIG1vbiBnYXJzIHQmIzM5O2FzIG5pcXVlciBsZSBHYW1l
+wqA8ZGl2IGRpcj0iYXV0byI+4pi677iP4pi677iP8J+NvvCfpYLwn5iY8J+YmPCfmJnwn4238J+N
+ufCfmIfwn5iI8J+Pmu+4j+Kbqe+4j/CflYvwn4+n8J+Pp+Kbqe+4j/Cfj6Lwn4+b77iP4puq8J+S
+kjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9ImdtYWlsX2V4dHJhIj48YnI+PGRpdiBjbGFzcz0iZ21h
+aWxfcXVvdGUiPkxlwqAxMCBtYWkgMjAxNyAyMzo1MywgJnF1b3Q7Y29udGFjdCZxdW90OyAmbHQ7
+PGEgaHJlZj0ibWFpbHRvOmNvbnRhY3RAd3Q3LmVwaGVjLXRpLmJlIj5jb250YWN0QHd0Ny5lcGhl
+Yy10aS5iZTwvYT4mZ3Q7IGEgw6ljcml0wqA6PGJyIHR5cGU9ImF0dHJpYnV0aW9uIj48YmxvY2tx
+dW90ZSBjbGFzcz0iZ21haWxfcXVvdGUiIHN0eWxlPSJtYXJnaW46MCAwIDAgLjhleDtib3JkZXIt
+bGVmdDoxcHggI2NjYyBzb2xpZDtwYWRkaW5nLWxlZnQ6MWV4Ij46LSk8YnI+DQo8L2Jsb2NrcXVv
+dGU+PC9kaXY+PC9kaXY+DQo=
+--f403045f88f6b2cc1a054f3286ec--

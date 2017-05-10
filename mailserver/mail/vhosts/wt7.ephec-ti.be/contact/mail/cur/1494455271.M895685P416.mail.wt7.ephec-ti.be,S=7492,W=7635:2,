@@ -1,0 +1,143 @@
+Return-Path: <membership@eff.org>
+Delivered-To: <contact@wt7.ephec-ti.be>
+Received: from mail.wt7.ephec-ti.be
+	by mail.wt7.ephec-ti.be (Dovecot) with LMTP id gNoONOeTE1mgAQAAJEX/iA
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 22:27:51 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.wt7.ephec-ti.be (Postfix) with ESMTP id C99115806FF
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 22:27:51 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at mail.wt7.ephec-ti.be
+Received: from mail.wt7.ephec-ti.be ([127.0.0.1])
+	by localhost (mail.wt7.ephec-ti.be [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id IUskqlUYbvub for <contact@wt7.ephec-ti.be>;
+	Wed, 10 May 2017 22:27:50 +0000 (UTC)
+Received: from civismtp.uas.coop (unknown [67.212.170.242])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.wt7.ephec-ti.be (Postfix) with ESMTPS id 0B3A45806F7
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 22:27:48 +0000 (UTC)
+Authentication-Results: mail.wt7.ephec-ti.be; dmarc=pass header.from=eff.org
+Authentication-Results: mail.wt7.ephec-ti.be; dkim=pass
+	reason="2048-bit key; unprotected key"
+	header.d=contact.eff.org header.i=@contact.eff.org
+	header.b=d7ODNZb/; dkim-adsp=none (unprotected policy);
+	dkim-atps=neutral
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=contact.eff.org; h=mime-version:content-type:from:to:cc:subject:content-transfer-encoding:date:message-id; s=may2015; bh=t0mXq/woeY8RjjxT7CRzPeEk72o=; b=d7ODNZb/ZXBbQlhrdMbHaZ70WahYpAwdg44ulwPtKC00wHvPhntWaZKknOQ+YWPIgYFu1AFL+DHGrO+QtStfp03Nsw3Gmc4f9H8MDyuar289sHUrc8kMJN4IeRiPzzdc6ldfscx3z7EJTfIwY8KA+zigKpaS1xIbC7X6O6cGO08Mvowf+doy8gu6k4yAINWamA0KjgofIp64yyJVMvNzEdZmE0Cit8oPv+P9YSytJfuW/2pBYFtu2aSOkUtNZoVVCUXofMoX2i1l8U+J2ySXRfUPbfduTq871NjlXkZA4t2WdWTJkQ/RqG/3LOoaky4/sSP5NMYx8F8O47yjdBG4Eg==
+Received: from gw1.eff.org (HELO web2.eff.org) 
+ (smtp-auth username xxxxxx, mechanism cram-md5)
+  by civismtp.uas.coop (qpsmtpd/0.84) with ESMTPA; Tue, 09 May 2017 16:49:12 -0500
+Received: from supporters.eff.org (localhost [127.0.0.1])
+	by web2.eff.org (Postfix) with ESMTP id 4891B8004761
+	for <contact@wt7.ephec-ti.be>; Tue,  9 May 2017 14:49:10 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_8e952bd09e1676d3ff45bea1ec7be770"
+From: Aaron Jue <membership@eff.org>
+To: "contact@wt7.ephec-ti.be" <contact@wt7.ephec-ti.be>
+Cc: 
+Subject: Please Confirm Your EFF Subscription
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+Date: Tue, 09 May 2017 14:49:10 -0700
+Message-Id: <20170509214910.4891B8004761@web2.eff.org>
+
+--=_8e952bd09e1676d3ff45bea1ec7be770
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+
+Hi there,
+
+It looks like you signed up for the Electronic Frontier Foundation mailing list while using our Certbot tool. Before you start getting email from us, we need you to *confirm your email address.*
+
+Click this link to confirm your email:
+
+https://supporters.eff.org/subscription-confirmation/certbot?cid1=2022433&cs=63f2dd19ce50ed2bc663bb35fb578cb3_1494366547_672
+
+If you don't confirm your email, you won't be subscribed to our email list. It's that simple.
+
+The Electronic Frontier Foundation is a nonprofit based in San Francisco that focuses on how new technologies affect our civil liberties. In our mailings, you'll learn about free speech, privacy, innovation, and the law.  Read more about our work at https://eff.org.
+
+You can also learn about our work by following us on social media:
+
+Twitter: https://twitter.com/eff
+Facebook: https://www.facebook.com/eff
+Google+: https://plus.google.com/+eff
+
+Thanks for your interest in digital rights,
+
+Rainey Reitman
+EFF Activism Director
+Support EFF projects like Certbot: https://supporters.eff.org/donate/certbot-welcome
+--=_8e952bd09e1676d3ff45bea1ec7be770
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset=utf-8
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="580">
+	<tbody>
+		<tr>
+			<td align="center">
+			<table border="0" cellpadding="0" cellspacing="0" width="580">
+				<tbody>
+					<tr>
+						<td align="left" class="header" valign="bottom"><a href="https://supporters.eff.org/donate/certbot-welcome"><img alt="Electronic Frontier Foundation" border="0" height="130" src="https://www.eff.org/files/filenode/email-header.jpg" width="580" /></a></td>
+					</tr>
+					<tr>
+						<td>
+						<table border="0" cellpadding="0" cellspacing="16" style="background-color:#f5f5f5" width="580">
+							<tbody>
+								<tr>
+									<td align="left" class="mainbar" valign="top" width="348">
+									<div style="font-size:12px;margin:10px 25px 0">Hi there,</div>
+
+									<div style="font-size:12px;margin:10px 25px 0">It looks like you signed up for the Electronic Frontier Foundation mailing list while using our <a href="https://certbot.eff.org/" style="color:#cc0000;">Certbot</a> tool. Before you start getting email from us, we need you to <strong>confirm your email address. </strong></div>
+
+									<div style="font-size:12px;margin:10px 25px 0">Click this link to confirm your email:<br />
+									<a href="https://supporters.eff.org/subscription-confirmation/certbot?cid1=2022433&amp;cs=63f2dd19ce50ed2bc663bb35fb578cb3_1494366547_672" style="color:#cc0000">https://supporters.eff.org/subscription-confirmation/certbot?cid1=2022433&amp;cs=63f2dd19ce50ed2bc663bb35fb578cb3_1494366547_672</a></div>
+
+									<div style="font-size:12px;margin:10px 25px 0">
+									<p>If you don&#39;t confirm your email, you won&#39;t be subscribed to our email list. It&#39;s that simple.</p>
+
+									<p>The Electronic Frontier Foundation is a nonprofit based in San Francisco that focuses on how new technologies affect our civil liberties. In our mailings, you&#39;ll learn about free speech, privacy, innovation, and the law. Read more about our work at <a href="https://www.eff.org/" style="color: #cc0000;">https://eff.org</a>.</p>
+
+									<p>You can also learn about our work by following us on social media:</p>
+
+									<p>Twitter: <a href="https://twitter.com/eff" style="color:#cc0000">https://twitter.com/eff</a><br />
+									Facebook: <a href="https://www.facebook.com/eff" style="color:#cc0000">https://www.facebook.com/eff</a><br />
+									Google+: <a href="https://plus.google.com/+eff" style="color:#cc0000">https://plus.google.com/+eff</a></p>
+
+									<p>Thanks for your interest in digital rights,</p>
+
+									<p>Rainey Reitman<br />
+									EFF Activism Director<br />
+									<a href="https://supporters.eff.org/donate/certbot-welcome" style="color:#cc0000;">Support EFF projects like Certbot!</a></p>
+									</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="646">
+				<tbody>
+					<tr>
+						<td><img alt="Footer" height="87" src="https://www.eff.org/files/filenode/email-footer.jpg" width="646" /></td>
+					</tr>
+					<tr>
+						<td align="center" class="footer" style="text-align:center">
+						<p style="font-size:10px;color:#666">Electronic Frontier Foundation, 815 Eddy Street, San Francisco, CA 94109 USA<br />
+						EFF appreciates your support and respects your <a href="https://www.eff.org/policy" style="color:#cc0000" title="View EFF's privacy policy">privacy</a>.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+--=_8e952bd09e1676d3ff45bea1ec7be770--
+

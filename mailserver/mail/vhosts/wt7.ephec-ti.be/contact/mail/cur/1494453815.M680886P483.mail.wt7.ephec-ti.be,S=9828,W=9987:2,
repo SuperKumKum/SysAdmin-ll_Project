@@ -1,0 +1,159 @@
+Return-Path: <membership@eff.org>
+Delivered-To: <contact@wt7.ephec-ti.be>
+Received: from mail.wt7.ephec-ti.be
+	by mail.wt7.ephec-ti.be (Dovecot) with LMTP id tEaiBg2OE1njAQAAJEX/iA
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 22:03:35 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.wt7.ephec-ti.be (Postfix) with ESMTP id A230A580756
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 22:03:35 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at mail.wt7.ephec-ti.be
+Received: from mail.wt7.ephec-ti.be ([127.0.0.1])
+	by localhost (mail.wt7.ephec-ti.be [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id wrcmST150P80 for <contact@wt7.ephec-ti.be>;
+	Wed, 10 May 2017 22:03:33 +0000 (UTC)
+Received: from civismtp.uas.coop (unknown [67.212.170.242])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.wt7.ephec-ti.be (Postfix) with ESMTPS id 61F20580753
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 22:03:33 +0000 (UTC)
+Authentication-Results: mail.wt7.ephec-ti.be; dmarc=pass header.from=eff.org
+Authentication-Results: mail.wt7.ephec-ti.be; dkim=pass
+	reason="2048-bit key; unprotected key"
+	header.d=contact.eff.org header.i=@contact.eff.org
+	header.b=ykIwjmS0; dkim-adsp=none (unprotected policy);
+	dkim-atps=neutral
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=contact.eff.org; h=mime-version:content-type:from:to:cc:subject:content-transfer-encoding:date:message-id; s=may2015; bh=fuw1a+SR5k8pwIxIpP9ExKj6wjA=; b=ykIwjmS0iCLuGyzWj5EiW1U/wQouAzbDNxZG9Kj2r/QwxXZoxAE+17HOYX6F9kZq/kUjMtohBVk81TXO8V54kBSjJS9ZIhxXjwP1iEtL7EXajyyaPGQu2n4KaaVwf3AHOCCfCtvnJ8V9gHAmOIxF7EYthsxpgxxPwrQ8JHRZasOpn7Ggjenh8xq+r5CIEfdcNGMkGoH/wygo/xjvqEX9s+R8VCMSlfNq/lI3ReczbnoROKyFEwXnrwMeF0fzJrrM+aqKB3hK3jH0hgc8hvztzI3rOZISiFKYqg3Z0JexeZ23tEBFvT67pUQBBK+GjqYykh0/BX0lmJlU2TKelydR6w==
+Received: from gw1.eff.org (HELO web2.eff.org) 
+ (smtp-auth username xxxxxx, mechanism cram-md5)
+  by civismtp.uas.coop (qpsmtpd/0.84) with ESMTPA; Wed, 10 May 2017 17:03:31 -0500
+Received: from supporters.eff.org (localhost [127.0.0.1])
+	by web2.eff.org (Postfix) with ESMTP id 286B08004767
+	for <contact@wt7.ephec-ti.be>; Wed, 10 May 2017 15:03:31 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_2b5b57af061f470bddc8fe0760a7be9c"
+From: Aaron Jue <membership@eff.org>
+To: "contact@wt7.ephec-ti.be" <contact@wt7.ephec-ti.be>
+Cc: 
+Subject: =?utf-8?Q?The_Internet=E2=80=99s_more_secure_because_of_you?=
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+Date: Wed, 10 May 2017 15:03:31 -0700
+Message-Id: <20170510220331.286B08004767@web2.eff.org>
+
+--=_2b5b57af061f470bddc8fe0760a7be9c
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+
+Dear Supporter of Digital Freedom,
+
+I want to thank you for using the Electronic Frontier Foundation’s Certbot to enable HTTPS on your webserver. Each cert brings us closer to our goal of encrypting the entire Internet and defending user privacy and free expression. I also want to thank you for signing up to learn more about EFF and the fight for your rights!
+
+If you did not subscribe, or subscribed by accident, please click here to unsubscribe: https://supporters.eff.org/update-your-preferences?cid1=2022433&cs=e4e21a2141102abc0905fb49245c1490_1494453808_672
+
+Certbot is part of a growing number of EFF technology projects designed to protect your online freedom. EFF helped develop Let’s Encrypt, the free SSL certificate authority expanding the availability of encryption and taking the web by storm. We created HTTPS Everywhere to help ensure that users connect to websites securely. We also maintain Privacy Badger, a free browser tool that helps hundreds of thousands of Internet users block third-party scripts and cookies that track users across the web. EFF works on the side of ordinary users and advanced developers alike because together, we can build a safer, more privacy-friendly web.
+
+This is just a taste of what thousands of EFF members have accomplished over the last 26 years. Here is what you will see on the EFF mailing list:
+
+    EFFector: our bimonthly newsletter about technology, law, and your rights.
+    Action Alerts: high-priority alerts when a breaking issue needs your attention.
+    Special invitations to events in your area and opportunities to support EFF.
+
+You can also learn more about us on social media:
+
+Facebook - https://www.facebook.com/eff
+Twitter - https://twitter.com/eff
+Google Plus - https://plus.google.com/+eff‎
+
+If you like Certbot, please consider donating to EFF or becoming a member to support projects like these and help widen the path to a better digital future. Thanks!
+
+Fighting for your online rights,
+
+Aaron Jue
+EFF Development Director
+
+P.S. Looking for Certbot support? Start here: https://certbot.eff.org/support
+--=_2b5b57af061f470bddc8fe0760a7be9c
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset=utf-8
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="580">
+	<tbody>
+		<tr>
+			<td align="center">
+			<table border="0" cellpadding="0" cellspacing="0" width="580">
+				<tbody>
+					<tr>
+						<td align="left" class="header" valign="bottom">
+						<p style="font-size:5px;color:#666;">&nbsp;</p>
+						<!-- adds a line to make the spacing more balanced--><a href="https://www.eff.org/"><img alt="Electronic Frontier Foundation" border="0" cellpadding="0" height="130" src="https://www.eff.org/files/2015/10/03/new-email-header-blue.png" width="580" /></a></td>
+					</tr>
+					<tr>
+						<td>
+						<table border="0" cellpadding="0" cellspacing="16" style="background-color:#ffffff" width="580">
+							<tbody>
+								<tr>
+									<td align="left" class="mainbar" valign="top" width="348">
+									<div style="font-size:16px;margin:10px 25px 0">
+									<h2 style="font-family:'lato',arial,sans-serif;margin-bottom:4px;padding-bottom:4px;font-size:24px;font-weight:bold;color:#ec1c24">Dear Supporter of Digital Freedom,</h2>
+
+									<p>I want to thank you for using the Electronic Frontier Foundation&rsquo;s Certbot to enable HTTPS on your webserver. Each cert brings us closer to our goal of encrypting the entire Internet and defending user privacy and free expression. I also want to thank you for signing up to learn more about EFF and the fight for your rights!</p>
+
+									<p><strong>If you did not subscribe, or did so by accident, please <a href="https://supporters.eff.org/update-your-preferences?cid1=2022433&amp;cs=e4e21a2141102abc0905fb49245c1490_1494453808_672" style="color:#cc0000">click here</a> to unsubscribe.</strong></p>
+
+									<p>Certbot is part of a growing number of EFF technology projects designed to protect your online freedom. EFF helped develop Let&rsquo;s Encrypt, the free SSL certificate authority expanding the availability of encryption and taking the web by storm. We created HTTPS Everywhere to help ensure that users connect to websites securely. We also maintain Privacy Badger, a free browser tool that helps hundreds of thousands of Internet users block third-party scripts and cookies that track users across the web. EFF works on the side of ordinary users and advanced developers alike because together, we can build a safer, more privacy-friendly web.</p>
+
+									<p>This is just a taste of what thousands of EFF members have accomplished over the last 26 years. Here is what you will see on the EFF mailing list:</p>
+
+									<ul>
+										<li>EFFector: our bimonthly newsletter about technology, law, and your rights.</li>
+										<li>Action Alerts: high-priority alerts when a breaking issue needs your attention.</li>
+										<li>Special invitations to events in your area and opportunities to support EFF.</li>
+									</ul>
+
+									<p>You can also follow EFF&#39;s work on <a href="https://www.facebook.com/eff" style="color:#cc0000">Facebook</a>, <a href="https://twitter.com/eff" style="color:#cc0000">Twitter</a>, and <a href="https://plus.google.com/+eff‎" style="color:#cc0000">Google+</a>!</p>
+
+									<p>If you like Certbot, <a href="https://supporters.eff.org/donate/certbot-welcome" style="color:#cc0000">please consider donating to EFF or becoming a member</a> to support projects like these and help widen the path to a better digital future. Thanks!</p>
+
+									<p>Fighting for your online rights,</p>
+
+									<p>Aaron Jue<br />
+									EFF Development Director</p>
+
+									<p>P.S. Looking for Certbot support? <a href="https://certbot.eff.org/support/" style="color:#cc0000;">Start here</a>.</p>
+									</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table border="0" cellpadding="0" cellspacing="0" width="580">
+				<tbody>
+					<tr>
+						<td><a href="https://supporters.eff.org/donate/certbot-welcome"><img alt="Footer" height="130" src="https://www.eff.org/files/2015/10/13/mailing-footer-blue-generic.png" width="580" /></a></td>
+						<!-- this end tag belongs, though -->
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="footer" style="text-align:center">
+			<p style="font-size:10px;color:#666"><br />
+			Electronic Frontier Foundation, 815 Eddy Street, San Francisco, CA 94109 USA.<br />
+			EFF appreciates your support and respects your <a href="https://www.eff.org/policy" style="color:#ec1c24" title="View EFF's privacy policy">privacy</a>.<br />
+			<a href="https://supporters.eff.org/update-your-preferences?cid1=2022433&amp;cs=e4e21a2141102abc0905fb49245c1490_1494453808_672" style="color:#ec1c24">Unsubscribe or change your email preferences</a>.</p>
+
+			<p style="font-size:5px;color:#666;">&nbsp;</p>
+			<!-- adds a line to make the spacing more balanced--></td>
+		</tr>
+	</tbody>
+</table>
+</center>
+--=_2b5b57af061f470bddc8fe0760a7be9c--
+

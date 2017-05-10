@@ -13,9 +13,11 @@ services:
       - "4190:4190" # SIEVE      STARTTLS - Optional - Recommended for mail filtering
     environment:
       - DBPASS=myPassword
+      - ENABLE_FETCHMAIL=true
     volumes:
       - /mnt/docker/mail:/var/mail
       - /mnt/docker/mail/opendkim:/etc/opendkim/keys
+      - /mnt/docker/nginx/certs/:/etc/letsencrypt
     depends_on:
       - mariadb
 
@@ -56,8 +58,8 @@ services:
     image: wonderfall/boring-nginx
     container_name: nginx
     ports:
-      - "80:80"
-      - "443:443"
+      - "80:8000"
+      - "443:4430"
     volumes:
       - /mnt/docker/nginx/sites-enabled:/sites-enabled
       - /mnt/docker/nginx/conf:/conf.d
