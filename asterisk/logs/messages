@@ -1,0 +1,18 @@
+[Dec 19 08:48:27] Asterisk 14.2.0 built by buildozer @ build-edge-x86_64 on a x86_64 running Linux on 2016-11-23 18:06:31 UTC
+[Dec 19 08:48:28] NOTICE[8] cdr.c: CDR simple logging enabled.
+[Dec 19 08:48:29] NOTICE[8] loader.c: 243 modules will be loaded.
+[Dec 19 08:48:29] WARNING[8] res_phoneprov.c: Unable to find a valid server address or name.
+[Dec 19 08:48:30] ERROR[8] ari/config.c: No configured users for ARI
+[Dec 19 08:48:30] NOTICE[8] pbx_lua.c: Lua PBX Switch loaded.
+[May 13 23:31:35] Asterisk 14.2.0 built by buildozer @ build-edge-x86_64 on a x86_64 running Linux on 2016-11-23 18:06:31 UTC
+[May 13 23:31:35] NOTICE[1] cdr.c: CDR simple logging enabled.
+[May 13 23:31:35] NOTICE[1] loader.c: 243 modules will be loaded.
+[May 13 23:31:35] WARNING[1] res_phoneprov.c: Unable to find a valid server address or name.
+[May 13 23:31:35] ERROR[1] ari/config.c: No configured users for ARI
+[May 13 23:31:35] NOTICE[1] pbx_lua.c: Lua PBX Switch loaded.
+[May 13 23:31:35] WARNING[1] res_musiconhold.c: A directory must be specified for class 'general'!
+[May 13 23:31:35] WARNING[1] res_musiconhold.c: Cannot open dir /var/lib/asterisk/moh or dir does not exist
+[May 13 23:31:35] WARNING[1] res_musiconhold.c: No music on hold classes configured, disabling music on hold.
+[May 13 23:31:35] NOTICE[1] chan_skinny.c: Configuring skinny from skinny.conf
+[May 13 23:31:35] NOTICE[1] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[May 13 23:31:35] NOTICE[1] cel_custom.c: No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.
