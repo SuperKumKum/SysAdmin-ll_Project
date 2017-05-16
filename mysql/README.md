@@ -2,25 +2,35 @@
 
 ## Lancement de l'image MYSQL avec le docker-compose 
 
-    version: '2'
-
-    services:
+    # apache et php
+    # php:apache officiel
     php:
-    image: nimmis/apache-php5
-    container_name: apache
+    mage: nimmis/apache-php5
+    container_name: apache-php
     ports:
-      - "80:80"  
-      - "443:443"
+     - 80:80
+     - 443:443
     volumes:
-      - /srv/docker/apache:/var/www/html
+     - /srv/docker/apache/conf:/etc/apache2
+     - /srv/docker/apache/html:/var/www/html
+     - /srv/docker/apache/logs:/var/log/apache2
+     - /srv/docker/apache/ssl:/etc/ssl/certs/wt7
     links:
-      - db
+     - db
 
+    # sql
+    # mariadb
     db:
     image: mysql/mysql-server:5.6
-    container_name: mysql 
+    container_name: db
     environment:
-     - MYSQL_ROOT_PASSWORD=hunter2
+     - MYSQL_ROOT_PASSWORD=rootPassword
+     - MYSQL_USER=wt7
+     - MYSQL_DATABASE=web_db
+     - MYSQL_PASSWORD=password
+    ports:
+     - 3306:3306
+
      
 ## Gérer l'image/bases de données 
 - Exécuter la commande pour rentrer dans le containeur: 
