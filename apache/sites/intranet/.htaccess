@@ -1,1 +1,1 @@
-ErrorDocument 403 /var/www/html/intranet/403.html
+ErrorDocument 403 /403.html
