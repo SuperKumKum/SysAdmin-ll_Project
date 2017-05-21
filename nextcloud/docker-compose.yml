@@ -1,0 +1,31 @@
+ version: '2'
+ services:
+  mariadb:
+    image: mariadb:10.1
+    container_name: mariadb
+    # restart: always
+    # Info : These variables are ignored when the volume already exists (databases created before).
+    environment:
+      - MYSQL_ROOT_PASSWORD=myPassword
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=password
+    volumes:
+      - /mnt/docker/mysql/db:/var/lib/mysql
+
+  nextcloud:
+    image: wonderfall/nextcloud:latest
+    container_name: nextcloud
+    environment:
+      - DB_TYPE=MYSQL
+      - DB_NAME=nextcloud
+      - DB_USER=nextcloud
+      - DB_PASSWORD=password
+      - DB_HOST=mariadb
+    volumes:
+      - /mnt/docker/nextcloud/data:/data
+      - /mnt/docker/nextcloud/config:/config
+      - /mnt/docker/nextcloud/apps:/apps2
+      - /mnt/docker/nextcloud/themes:/nextcloud/themes    
+    links:
+      - mariadb
