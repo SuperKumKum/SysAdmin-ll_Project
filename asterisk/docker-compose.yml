@@ -2,10 +2,11 @@
  services:
   asterisk:
     image: dougbtv/asterisk14
-    container_name : asterisk
+    container_name : asterisk 
     ports:
-     - "10000:20000/udp" # RTP need long-range ports
-     - "5060:5060/udp" # SIP
+     - "10000:20000/udp" # RTP need long-range ports 
+     - "5060:5060/udp" # SIP 
      - "5036:5036/udp" # IAX2 (optional)
-    volumes:
+    volumes: 
+     - /mnt/docker/asterisk/sounds:/var/lib/asterisk/sounds/en/
      - /mnt/docker/asterisk/:/etc/asterisk
