@@ -8,11 +8,4 @@
      - "5060:5060/udp" # SIP
      - "5036:5036/udp" # IAX2 (optional)
     volumes:
-     - /mnt/docker/asterisk/asterisk.conf:/etc/asterisk/asterisk.conf
-     - /mnt/docker/asterisk/extensions.conf:/etc/asterisk/extensions.conf
-     - /mnt/docker/asterisk/acl.conf:/etc/asterisk/acl.conf
-     - /mnt/docker/asterisk/iax.conf:/etc/asterisk/iax.conf
-     - /mnt/docker/asterisk/rtp.conf:/etc/asterisk/rtp.conf
-     - /mnt/docker/asterisk/sip.conf:/etc/asterisk/sip.conf
-     - /mnt/docker/asterisk/users.conf:/etc/asterisk/users.conf
-     - /mnt/docker/asterisk/voicemail.conf:/etc/asterisk/voicemail.conf
+     - /mnt/docker/asterisk/:/etc/asterisk
