@@ -29,3 +29,15 @@
       - /mnt/docker/nextcloud/themes:/nextcloud/themes    
     links:
       - mariadb
+
+  nginx:
+    image: wonderfall/boring-nginx
+    container_name: nginx
+    ports:
+      - "80:8000"
+      - "443:4430"
+    volumes:
+      - /mnt/docker/nginx/sites-enabled:/sites-enabled
+      - /mnt/docker/nginx/conf:/conf.d
+      - /mnt/docker/nginx/log:/var/log/nginx
+      - /mnt/docker/nginx/certs:/certs
