@@ -1,0 +1,16 @@
+  # apache et php
+  # php:apache officiel
+  php:
+   image: nimmis/apache-php5
+   container_name: apache-php
+   ports:
+     - 80:80
+     - 443:443
+   volumes:
+     - /srv/docker/apache/conf:/etc/apache2
+     - /srv/docker/apache/html:/var/www/html
+     - /srv/docker/apache/logs:/var/log/apache2
+     - /srv/docker/apache/ssl:/etc/letsencrypt
+   links:
+     - db
+

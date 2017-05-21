@@ -1,0 +1,27 @@
+  # apache et php
+  # php:apache officiel
+  php:
+   image: nimmis/apache-php5
+   container_name: apache-php
+   ports:
+     - 80:80
+     - 443:443
+   volumes:
+     - /srv/docker/apache/conf:/etc/apache2
+     - /srv/docker/apache/html:/var/www/html
+     - /srv/docker/apache/logs:/var/log/apache2
+     - /srv/docker/apache/ssl:/etc/ssl/certs/wt7
+   links:
+     - db
+
+  # sql
+  db:
+   image: mysql/mysql-server:5.6
+   container_name: db
+   environment:
+     - MYSQL_ROOT_PASSWORD=rootPassword
+     - MYSQL_USER=wt7
+     - MYSQL_DATABASE=web_db
+     - MYSQL_PASSWORD=password
+   ports:
+     - 3306:3306
