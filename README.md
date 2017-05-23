@@ -16,6 +16,6 @@ Un cahier des charges à été conçus par WT et le consultant. Ce dernier nous 
 
 ## Etapes
 - [x] Mission 1: **Web & DNS** (14 mars 2017)
-- [ ] Mission 2: **Mail** (18 avril 2017)
-- [ ] Mission 3: **Voip** (2 mai 2017)
-- [ ] Mission 4: **Partage de fichier** (23 mai 2017)
+- [X] Mission 2: **Mail** (18 avril 2017)
+- [X] Mission 3: **Voip** (2 mai 2017)
+- [X] Mission 4: **Partage de fichier** (23 mai 2017)
