@@ -1,0 +1,76 @@
+ # docker-compose pour le DNS et web server
+ 
+version: '2'
+services:
+
+  # Bind9 
+  # image personelle
+  # superkumkum/docker-bind 
+  bind: 
+    image: superkumkum/docker-bind
+    container_name: bind 
+    ports: 
+      - "53:53/udp" 
+      - "53:53/tcp"
+    volumes: 
+      - /srv/docker/bind:/data 
+
+  # apache et php
+  # php:apache officiel 
+  php: 
+    image: nimmis/apache-php5
+    container_name: apache-php 
+    volumes: 
+      - /srv/docker/apache/conf:/etc/apache2 
+      - /srv/docker/apache/html:/var/www/html 
+      - /srv/docker/apache/logs:/var/log/apache2 
+      - /srv/docker/apache/ssl:/etc/letsencrypt
+    links:
+      - db
+    networks:
+      intra:
+        ipv4_address: 10.0.0.10
+      default:
+        aliases:
+          - web
+
+  # reverse-proxy
+  nginx:
+    image: nginx
+    container_name: nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./nginx/etc:/etc/nginx
+      - ./nginx/log:/var/log/nginx
+      - ./nginx/www:/var/www
+      - /srv/docker/apache/ssl/letsencrypt:/etc/letsencrypt # certs
+    networks:
+      intra:
+        ipv4_address: 10.0.0.100
+
+  # sql
+  # mariadb 
+  db: 
+    image: mysql/mysql-server:5.6
+    container_name: db 
+    environment: 
+      - MYSQL_ROOT_PASSWORD=rootPassword
+      - MYSQL_USER=wt7 
+      - MYSQL_DATABASE=web_db
+      - MYSQL_PASSWORD=password
+    ports: 
+      - 3306:3306 
+
+# intranet
+networks:
+  intra:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.0.0.0/24
+          ip_range: 10.0.0.0/24
+          gateway: 10.0.0.1
+
